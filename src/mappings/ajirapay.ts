@@ -9,7 +9,7 @@ import { Cancellation, Stream, Withdrawal } from "../types/schema";
 export function handleCreateStream(event: CreateStreamEvent): void {
   let streamId: string = event.params.streamId.toString();
   let tokenAddress: string = event.params.tokenAddress.toHex();
-
+  //graph deploy --product hosted-service tujiajiri-africa/ajirapay-linea-goerli
   // Create the stream entity.
   let stream: Stream = new Stream(streamId);
   stream.deposit = event.params.deposit;

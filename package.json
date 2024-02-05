@@ -31,7 +31,7 @@
     "codegen": "graph codegen --output-dir src/types/",
     "deploy": "graph deploy $SUBGRAPH --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
     "deploy:linea_mainnet": "graph deploy $SUBGRAPH --ipfs https://graph-ipfs.linea.build --node https://graph-deploy.linea.build",
-    "deploy:linea_testnet": "graph deploy $SUBGRAPH --ipfs https://graph-ipfs.goerli.linea.build --node https://graph-deploy.goerli.linea.build",
+    "deploy:linea_testnet": "graph deploy --product hosted-service $SUBGRAPH --ipfs https://graph-ipfs.goerli.linea.build --node https://graph-deploy.goerli.linea.build",
     "deploy:arbitrum": "yarn prepare:arbitrum && SUBGRAPH=sablier-labs/sablier-arbitrum yarn deploy",
     "deploy:avalanche": "yarn prepare:avalanche && SUBGRAPH=sablier-labs/sablier-avalanche yarn deploy",
     "deploy:bsc": "yarn prepare:bsc && SUBGRAPH=sablier-labs/sablier-bsc yarn deploy",
