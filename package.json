@@ -26,9 +26,9 @@
   "private": true,
   "repository": "github.com/Tujiajiri-Africa/v1-subgraph",
   "scripts": {
-    "build": "graph build --debug",
+    "build": "graph build",
     "clean": "rm -rf ./build ./src/types ./subgraph.yaml",
-    "codegen": "graph codegen --debug --output-dir src/types/",
+    "codegen": "graph codegen --output-dir src/types/",
     "deploy": "graph deploy $SUBGRAPH --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
     "deploy:linea_mainnet": "graph deploy $SUBGRAPH --ipfs https://graph-ipfs.linea.build --node https://graph-deploy.linea.build",
     "deploy:linea_testnet": "graph deploy $SUBGRAPH --ipfs https://graph-ipfs.goerli.linea.build --node https://graph-deploy.goerli.linea.build",
