@@ -1,5 +1,5 @@
 specVersion: 0.0.2
-description: Money streaming protocol
+description: Money streaming protocol and token vesting
 repository: https://github.com/Tujiajiri-Africa/v1-subgraph
 schema:
   file: ./schema.graphql
