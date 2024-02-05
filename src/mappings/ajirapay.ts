@@ -3,7 +3,7 @@ import {
   CancelStream as CancelStreamEvent,
   CreateStream as CreateStreamEvent,
   WithdrawFromStream as WithdrawFromStreamEvent,
-} from "../types/AjiraPayFinanceTokenStreamVaultV1.1.0/AjiraPayFinanceTokenStreamVault.1.0";
+} from "../types/AjiraPayFinanceTokenStreamVaultV1.1.0/AjiraPayFinanceTokenStreamVault";
 import { Cancellation, Stream, Withdrawal } from "../types/schema";
 
 export function handleCreateStream(event: CreateStreamEvent): void {

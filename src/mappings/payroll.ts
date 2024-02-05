@@ -3,7 +3,7 @@ import { Address, BigInt, dataSource } from "@graphprotocol/graph-ts";
 import { CUTOFF_STREAM_ID } from "../helpers/constants";
 import { createStreamTransaction, loadOrCreateToken } from "../helpers/database";
 import { CreateSalary as CreateSalaryEvent, Payroll as PayrollContract } from "../types/Payroll/Payroll";
-import { Sablier as SablierContract, Sablier__getStreamResult } from "../types/SablierV1.1.0/Sablier";
+import { Sablier as SablierContract, Sablier__getStreamResult } from "../types/AjiraPayFinanceTokenStreamVaultV1.1.0/AjiraPayFinanceTokenStreamVault";
 import { Stream, StreamToSalary } from "../types/schema";
 
 /// Maps and normalises salaries as streams. The "payroll" naming might sound awkward, but this is due
