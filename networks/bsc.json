@@ -1,9 +1,9 @@
 {
   "network": "bsc",
   "contracts": {
-    "sablier": {
+    "ajiraPayFinanceTokenStreamVault": {
       "v1-1-0": {
-        "address": "0x05BC7f5fb7F248d44d38703e5C921A8c16825161",
+        "address": "",
         "startBlock": 10874288
       }
     }

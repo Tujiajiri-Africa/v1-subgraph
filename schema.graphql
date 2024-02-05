@@ -13,7 +13,7 @@ type Token @entity {
 }
 
 """
-Generic type for Sablier cancellations.
+Generic type for Ajira Pay Finance stream cancellations.
 """
 type Cancellation @entity {
   "The same as the stream id"
@@ -31,7 +31,7 @@ type Cancellation @entity {
 }
 
 """
-Generic type for Sablier streams.
+Generic type for Ajira Pay Finance stream.
 """
 type Stream @entity {
   "Details about cancellation time and the distributed amounts"
@@ -92,7 +92,7 @@ type StreamTransaction @entity {
 }
 
 """
-Generic type for Sablier withdrawals.
+Generic type for Ajira Pay Finance stream withdrawals.
 """
 type Withdrawal @entity {
   "Transaction hash concatenated with log index"

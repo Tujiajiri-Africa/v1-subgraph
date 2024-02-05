@@ -1,13 +1,13 @@
 {
-  "name": "@sablier/subgraph",
-  "description": "Subgraph for the Sablier V1 token distribution protocol",
+  "name": "@ajira-pay-finance/subgraph",
+  "description": "Subgraph for the Ajira Pay Finance V2 token distribution protocol",
   "version": "1.0.0",
   "author": {
-    "name": "Sablier",
-    "url": "https://sablier.com"
+    "name": "Ajira Pay Finance",
+    "url": "https://ajirapay.finance"
   },
   "bugs": {
-    "url": "https://github.com/sablier-labs/v1-subgraph/issues"
+    "url": "https://github.com/Tujiajiri-Africa/v1-subgraph/issues"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.23.0",
@@ -24,7 +24,7 @@
   },
   "license": "LGPL-3.0",
   "private": true,
-  "repository": "github.com/sablier-labs/v1-subgraph",
+  "repository": "github.com/Tujiajiri-Africa/v1-subgraph",
   "scripts": {
     "build": "graph build --debug",
     "clean": "rm -rf ./build ./src/types ./subgraph.yaml",
@@ -40,6 +40,8 @@
     "deploy:optimism": "yarn prepare:optimism && SUBGRAPH=sablier-labs/sablier-optimism yarn deploy",
     "deploy:rinkeby": "yarn prepare:rinkeby && SUBGRAPH=sablier-labs/sablier-rinkeby yarn deploy",
     "deploy:ropsten": "yarn prepare:ropsten && SUBGRAPH=sablier-labs/sablier-ropsten yarn deploy",
+    "deploy:linea-mainnet": "yarn prepare:linea-mainnet && SUBGRAPH=ajira-pay-finance/ajirapay-linea-mainnet yarn deploy",
+    "deploy:linea-goerli": "yarn prepare:linea-goerli && SUBGRAPH=ajira-pay-finance/ajirapay-linea-goerli yarn deploy",
     "lint": "yarn lint:ts && yarn prettier:check",
     "lint:ts": "eslint --config ./.eslintrc.yml --ignore-path ./.eslintignore --ext .js,.ts .",
     "prepare:arbitrum": "mustache ./networks/arbitrum.json ./templates/v1.1.0.yml > subgraph.yaml",
@@ -52,6 +54,8 @@
     "prepare:optimism": "mustache ./networks/optimism.json ./templates/v1.1.0.yml > subgraph.yaml",
     "prepare:rinkeby": "mustache ./networks/rinkeby.json ./templates/v1.0.0-and-v1.1.0.yml > subgraph.yaml",
     "prepare:ropsten": "mustache ./networks/ropsten.json ./templates/v1.1.0.yml > subgraph.yaml",
+    "prepare:linea-mainnet": "mustache ./networks/linea-mainnet.json ./templates/v1.1.0.yml > subgraph.yaml",
+    "prepare:linea-goerli": "mustache ./networks/linea-goerli.json ./templates/v1.1.0.yml > subgraph.yaml",
     "prettier": "prettier --config ./.prettierrc.yml --write \"**/*.{js,json,md,ts,yml}\"",
     "prettier:check": "prettier --check --config ./.prettierrc.yml \"**/*.{js,json,md,ts,yml}\""
   }

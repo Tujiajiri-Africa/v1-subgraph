@@ -1,0 +1,12 @@
+{
+    "network": "linea-goerli",
+    "contracts": {
+      "ajiraPayFinanceTokenStreamVault": {
+        "v1-1-0": {
+          "address": "0xd8FDE1F90895AB64E74efD376129Ae3e79F1B9f9",
+          "startBlock": 3144058
+        }
+      }
+    }
+  }
+  
