@@ -42,7 +42,7 @@
     "deploy:optimism": "yarn prepare:optimism && SUBGRAPH=sablier-labs/sablier-optimism yarn deploy",
     "deploy:rinkeby": "yarn prepare:rinkeby && SUBGRAPH=sablier-labs/sablier-rinkeby yarn deploy",
     "deploy:ropsten": "yarn prepare:ropsten && SUBGRAPH=sablier-labs/sablier-ropsten yarn deploy",
-    "deploy:linea-mainnet": "yarn prepare:linea-mainnet && SUBGRAPH=tujiajiri-africa/ajirapay-linea-mainnet yarn deploy:linea_mainnet",
+    "deploy:linea-mainnet": "yarn prepare:linea-mainnet && SUBGRAPH=ajirapay-finance/ajirapay-linea-mainnet yarn deploy:linea_mainnet",
     "deploy:linea-goerli": "yarn prepare:linea-goerli && SUBGRAPH=tujiajiri-africa/ajirapay-linea-goerli yarn deploy:linea_testnet",
     "lint": "yarn lint:ts && yarn prettier:check",
     "lint:ts": "eslint --config ./.eslintrc.yml --ignore-path ./.eslintignore --ext .js,.ts .",
