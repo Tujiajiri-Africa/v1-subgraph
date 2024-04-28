@@ -3,8 +3,8 @@
   "contracts": {
     "ajiraPayFinanceTokenStreamVault": {
       "v1-1-0": {
-        "address": "",
-        "startBlock": 10874288
+        "address": "0xC64263285867A40A1fE9121DB57ECddaa55cab06",
+        "startBlock": 38253904
       }
     }
   }
