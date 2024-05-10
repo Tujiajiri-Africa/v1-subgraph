@@ -37,6 +37,7 @@
     "deploy:arbitrum": "yarn prepare:arbitrum && SUBGRAPH=tujiajiri-africa/ajirapay-arbitrum yarn deploy",
     "deploy:polygon-pos": "yarn prepare:polygon-pos && SUBGRAPH=tujiajiri-africa/ajirapay-polygon yarn deploy",
     "deploy:avalanche": "yarn prepare:avalanche && SUBGRAPH=sablier-labs/sablier-avalanche yarn deploy",
+    "deploy:linea_studio": "yarn prepare:linea-mainnet && SUBGRAPH=ajirapay-linea yarn deploy_studio",
     "deploy:bsc": "yarn prepare:bsc && SUBGRAPH=ajirapay-bsc yarn deploy_studio",
     "deploy:goerli": "yarn prepare:goerli && SUBGRAPH=sablier-labs/sablier-goerli yarn deploy",
     "deploy:kovan": "yarn prepare:kovan && SUBGRAPH=sablier-labs/sablier-kovan yarn deploy",
