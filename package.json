@@ -41,6 +41,7 @@
     "deploy:avalanche": "yarn prepare:avalanche && SUBGRAPH=sablier-labs/sablier-avalanche yarn deploy",
     "deploy:linea_studio": "yarn prepare:linea-mainnet && SUBGRAPH=ajirapay-linea yarn deploy_studio",
     "deploy:bsc": "yarn prepare:bsc && SUBGRAPH=ajirapay-bsc yarn deploy_studio",
+    "deploy:celo": "yarn prepare:celo && SUBGRAPH=ajirapay-celo yarn deploy_studio",
     "deploy:goerli": "yarn prepare:goerli && SUBGRAPH=sablier-labs/sablier-goerli yarn deploy",
     "deploy:kovan": "yarn prepare:kovan && SUBGRAPH=sablier-labs/sablier-kovan yarn deploy",
     "deploy:mainnet": "yarn prepare:mainnet && SUBGRAPH=sablier-labs/sablier yarn deploy",
@@ -66,6 +67,7 @@
     "prepare:linea-mainnet": "mustache ./networks/linea-mainnet.json ./templates/v1.1.0.yml > subgraph.yaml",
     "prepare:linea-goerli": "mustache ./networks/linea-goerli.json ./templates/v1.1.0.yml > subgraph.yaml",
     "prepare:polygon-pos": "mustache ./networks/polygon.json ./templates/v1.1.0.yml > subgraph.yaml",
+    "prepare:celo": "mustache ./networks/celo.json ./templates/v1.1.0.yml > subgraph.yaml",
     "prettier": "prettier --config ./.prettierrc.yml --write \"**/*.{js,json,md,ts,yml}\"",
     "prettier:check": "prettier --check --config ./.prettierrc.yml \"**/*.{js,json,md,ts,yml}\""
   }
